@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav div{
+    width: 20%;
+    /* height: 100%; */
+    background-color: purple;
+    text-align: center;
+}
+
+nav ul {
+    width: 60%;
+    height: 100%; /* takes height from parent */
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5px;
+    list-style: none;
+    font-size: x-large;
+    
+}
+
+span{
+    grid-area: image;
+}
+header{
+    grid-area: aboutme;
+}
+div{
+    grid-area: hobbies;
+}
+main{
+    grid-area: contact;
+
+}
+aside{
+    grid-area: employment;
+    padding: 30px;
+}
+footer{
+    grid-area: education;
+    padding: 30px;
+
+}
+
+nav {
+    display: none;
+}
+
+.piccie {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+    section {        
+            margin-top: 20px;
+            display: grid;
+            
+            grid-template-areas:         
+
+            "image"
+            "aboutme"
+            "hobbies"
+            "contact"
+            "employment"
+            "employment"
+            "employment"
+            "education"
+            ;
+            /* grid-template-areas:
+                "header header header header header header"
+                "menu main main main right right"
+                "menu footer footer footer footer footer"
+            ; */
+            row-gap: 10px;
+            padding: 10px;
+        }
+
+        section > *{ /* instead of refering to each header item itself as its the same for all */
+            color: white;
+            background-color: purple;
+            font-size: x-large;
+            display: flex;
+            justify-content: center;
+        }
+
+@media screen and (min-width: 550px) {
+
+    nav{
+                height: 40px;
+                width: 100%;
+                background-color: black;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                font-family: 'Times New Roman', Times, serif;
+    }
+    .piccie {
+        height: 150px;
+        width: 450px;
+        border: 5px solid black;
+        border-radius: unset;
+    }
+    
+
+    section {
+        margin-top: 20px;
+        display: grid;
+        background-color: white;
+        font-size: large;
+        grid-template-areas: 
+        
+        "aboutme aboutme aboutme aboutme image"
+        "hobbies hobbies hobbies hobbies contact"
+        "employment employment employment employment employment"
+        "employment employment employment employment employment"
+        "education education education education education"
+        ; 
+        /* grid-template-areas:
+            "header header header header header header"
+            "menu main main main right right"
+            "menu footer footer footer footer footer"
+        ; */
+        gap: 10px;
+        padding: 10px;
+    }
+}        
+        
+        
+@media only screen and (min-width: 768px) {
+
+    nav{
+        height: 40px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .piccie {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 5px solid black;
+    }
+    
+    section {
+        margin-top: 20px;
+        display: grid;
+        background-color: white;
+        font-size: large;
+        grid-template-areas: 
+        
+        "image aboutme aboutme aboutme aboutme"
+        "image hobbies hobbies hobbies hobbies"
+        "image contact contact contact contact"
+        "employment employment employment employment employment"
+        "employment employment employment employment employment"
+        "employment employment employment employment employment"
+        "education education education education education"
+        "education education education education education"
+        ;
+        /* grid-template-areas:
+            "header header header header header header"
+            "menu main main main right right"
+            "menu footer footer footer footer footer"
+        ; */
+        gap: 10px;
+        padding: 10px;
+    }
+    section > *{ /* instead of refering to each header item itself as its the same for all */
+        font-size: large;
+    }
+
+}
+
+
+section > span{
+    background-color:white;
+
+}
+
+

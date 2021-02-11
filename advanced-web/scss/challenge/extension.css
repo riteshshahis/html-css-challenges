@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  border: 2px solid black;
+  background-color: lightblue;
+  display: inline-block;
+}
+.navbar p {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+body {
+  background-image: url("../assets/background-2.jpg");
+}
+
+section {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+section .common {
+  border: 1px solid black;
+  width: 30%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: cadetblue;
+  border-radius: 25%;
+  justify-content: center;
+  opacity: 50%;
+  margin-top: 20px;
+}
+section .common--mid {
+  height: 180px;
+}
+section .common--small {
+  height: 110px;
+}
+section .common__element {
+  display: block;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+section .common__element:hover {
+  border: 1px solid black;
+  border-radius: 5%;
+  margin: 10px auto;
+}
+section .common:hover {
+  background-color: royalblue;
+  opacity: 1;
+}
+section .common--small:hover {
+  background-color: magenta;
+  opacity: 1;
+}
+section .common--mid:hover {
+  background-color: yellow;
+  opacity: 1;
+}
